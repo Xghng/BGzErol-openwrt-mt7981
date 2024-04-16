@@ -69,7 +69,7 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a
     
     - name: Replace golang
-      run: cd openwrt && rm -rf feeds/packages/lang/golang && git clone https://github.com/BGzEroll/packages_lang_golang.git -b 22.x feeds/packages/lang/golang
+      run: cd openwrt && rm -rf feeds/packages/lang/golang && git clone https://github.com/BGzEroll/packages_lang_golang.git -b 21.x feeds/packages/lang/golang
     
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
